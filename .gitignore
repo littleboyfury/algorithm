@@ -30,6 +30,5 @@ hs_err_pid*
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-README.MD
 algorithm.iml
-src/
+
