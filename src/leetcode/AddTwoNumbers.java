@@ -1,9 +1,5 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @author littleboy
  * @date 2021/3/19 10:18
