@@ -1,9 +1,6 @@
 package leetcode;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author littleboy
@@ -61,8 +58,38 @@ import java.util.Set;
 
 public class LengthOfLongestSubstring {
     public static void main(String[] args) {
-        String s = "pwwkew";
-        System.out.println(lengthOfLongestSubstring4(s));
+        String s = "lkjdfhasdkjfas;dlkfjalskdjfasd;kfjasdkljfhaskjfdfhasjdlh" +
+                "dkaldjfkasdjfklashdfljagsdfiauwefhoiuwqefjbljdxhafaaljskdfh" +
+                "a;skdjfkzkjc;ahdkljfaldhfwiuehfaiusdfyoqwieufh aljsdhfaious" +
+                "alsjdkhfaljsdkhflajsdhfljasdhflkjaekuoqiflfkhajhdlsfjahladf" +
+                "a;ksdfqweoiryqouiwefhljqowieurqbwehrvkqwhevqwkehroug23ghrkh" +
+                "adsfqpoewiurlsdjbjlkahwepuiziuhfiluwe huiwd yo2ryuo2iuhfj23" +
+                "asdfq32yot981709uhflkj4g0tpufhajksdf0q9p8uefalkhjsdfpqew9ul" +
+                "12673oryueaihfljt29734qypwualihguftyopu2h3liqgrwyypthqwrftya";
+        long startTime = System.currentTimeMillis();
+        // 7ms
+        System.out.println(lengthOfLongestSubstring(s));
+        long endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
+
+        startTime = System.currentTimeMillis();
+        // 1ms
+        System.out.println(lengthOfLongestSubstring1(s));
+        endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
+
+        startTime = System.currentTimeMillis();
+        // 2ms
+        System.out.println(lengthOfLongestSubstring2(s));
+        endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
+
+        startTime = System.currentTimeMillis();
+        // 1ms
+        System.out.println(lengthOfLongestSubstring3(s));
+        endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
+
     }
 
     /**
@@ -138,7 +165,7 @@ public class LengthOfLongestSubstring {
      * @param s 字符串
      * @return 长度
      */
-    public static int lengthOfLongestSubstring4(String s) {
+    public static int lengthOfLongestSubstring3(String s) {
         int right = 0;
         int left = 0;
         int n = s.length();
