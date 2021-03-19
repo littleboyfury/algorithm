@@ -76,7 +76,7 @@ public class TwoSum {
                 }
             }
         }
-        return null;
+        throw new IllegalArgumentException("No two sum solution");
     }
 
     public static int[] twoSum1(int[] nums, int target) {
