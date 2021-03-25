@@ -12,3 +12,6 @@
 
 6. [Z字形变换](ConvertZ.java)
 
+7. [整数反转](ReverseInteger.java)
+
+8. [字符串转换整数](MyAtoi.java)
