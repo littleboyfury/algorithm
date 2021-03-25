@@ -158,9 +158,11 @@ public class ConvertZ {
                         j * T + numRows - 1 < s.length()) {
                     stringBuilder.append(s.charAt(j * T + numRows - 1));
                 } else {
+                    // 中间部分的前面部分
                     if (j * T + i < s.length()) {
                         stringBuilder.append(s.charAt(j * T + i));
                     }
+                    // 中间部分的后面部分
                     if ((j + 1) * T - i < s.length()) {
                         stringBuilder.append(s.charAt((j + 1) * T - i));
                     }
