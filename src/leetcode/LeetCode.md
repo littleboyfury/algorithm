@@ -10,3 +10,5 @@
 
 5. [最长回文子串](LongestPalindrome.java)
 
+6. [Z字形变换](ConvertZ.java)
+
