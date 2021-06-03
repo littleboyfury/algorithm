@@ -1,0 +1,19 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "1. [每日一题网页](https://mp.weixin.qq.com/s/UecTRCghbaNhjBkGp9VShw)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littleboyfury/algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littleboyfury/algorithm/issues"
+  },
+  "homepage": "https://github.com/littleboyfury/algorithm#readme"
+}

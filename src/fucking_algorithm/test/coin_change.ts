@@ -1,11 +1,7 @@
 function coinChange(coins: number[], amount: number) {
-  const dp: number[] = [];
 
-  // 初始化dp数组
-  for (let i = 0; i <= amount; i++) {
-    // 随便初始化一个比较大的数
-    dp.push(amount + 1);
-  }
+  // 创建 amount + 1 长度的数组 填入初始化值为amount + 1
+  const dp: number[] = new Array(amount + 1).fill(amount + 1);
 
   // 当凑零钱为0的金额时，表示不需要硬币即可
   dp[0] = 0;

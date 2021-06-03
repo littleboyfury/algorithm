@@ -27,6 +27,8 @@
 
 FuckingAlgorithm
 
+**注:**以后使用TypeScript编写
+
 * [github labuladong](https://github.com/labuladong/fucking-algorithm)
 
 * [FuckingAlgorithm](./src/fucking_algorithm/FuckingAlgorithm.md)
