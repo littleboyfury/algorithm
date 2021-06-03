@@ -24,3 +24,9 @@
 菜鸟的成长史
 
 * [LeetCode](./src/leetcode/LeetCode.md)
+
+FuckingAlgorithm
+
+* [github labuladong](https://github.com/labuladong/fucking-algorithm)
+
+* [FuckingAlgorithm](./src/fucking_algorithm/FuckingAlgorithm.md)
