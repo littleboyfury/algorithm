@@ -32,3 +32,9 @@ FuckingAlgorithm
 * [github labuladong](https://github.com/labuladong/fucking-algorithm)
 
 * [FuckingAlgorithm](./src/fucking_algorithm/FuckingAlgorithm.md)
+
+## CodeWars
+
+CodeWars 刷题
+
+- [CodeWars](./src/code_wars/CodeWars.md)
