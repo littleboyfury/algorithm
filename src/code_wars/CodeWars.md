@@ -22,7 +22,7 @@ Matches should be case-insensitive, and the words in the result should be lowerc
 Ties may be broken arbitrarily.
 If a text contains fewer than three unique words, then either the top-2 or top-1 words should be returned, or an empty array if a text contains no words.
 
-
+``` text
 top_3_words("In a village of La Mancha, the name of which I have no desire to call to
 mind, there lived not long since one of those gentlemen that keep a lance
 in the lance-rack, an old buckler, a lean hack, and a greyhound for
@@ -36,6 +36,7 @@ top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e")
 
 top_3_words("  //wont won't won't")
 # => ["won't", "wont"]
+```
 
 - [题目](https://www.codewars.com/kata/51e056fe544cf36c410000fb/)
 - [题解](./topThreeWords.ts)
