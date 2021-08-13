@@ -42,6 +42,13 @@ function permute(nums: number[]): number[][] {
   return result
 }
 
+/**
+ *
+ * @param nums 需要排列的数组
+ * @param numSet 已经排过的数值
+ * @param resultOne 其中一个解
+ * @param result 所有的解
+ */
 function permuteExec(nums: number[], numSet: Set<number>, resultOne: number[], result: number[][]) {
   if (resultOne.length === nums.length) {
 
@@ -51,12 +58,18 @@ function permuteExec(nums: number[], numSet: Set<number>, resultOne: number[], r
   }
 
   for (let i = 0; i < nums.length; i++) {
+
+    // 剪枝
     if (numSet.has(nums[i])) {
       continue
     }
+
+    // 满足条件添加
     numSet.add(nums[i])
     resultOne.push(nums[i])
     permuteExec(nums, numSet, resultOne, result)
+
+    // 回溯
     numSet.delete(nums[i])
     resultOne.pop()
   }
