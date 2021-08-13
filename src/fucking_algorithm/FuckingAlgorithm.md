@@ -2,7 +2,7 @@
 
 TAG: 动态规划
 
-[TS 题解](./test/coin_change.ts)
+[TS 题解](dynamicProgramming/coin_change.ts)
 
 [原文讲解](https://github.com/labuladong/fucking-algorithm/blob/master/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AF%A6%E8%A7%A3%E8%BF%9B%E9%98%B6.md)
 
@@ -17,7 +17,7 @@ int coinChange(int[] coins, int amount);
 
 ### 全排列
 
-[TS 题解](./test/full_array.ts)
+[TS 题解](backtracking_algorithm/full_array.ts)
 
 [原文讲解](https://github.com/littleboyfury/fucking-algorithm/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4%E7%B3%BB%E5%88%97/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88.md)
 

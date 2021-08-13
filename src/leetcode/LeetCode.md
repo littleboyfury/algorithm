@@ -17,3 +17,5 @@
 8. [字符串转换整数](MyAtoi.java)
 
 9. [回文数](IsPalindrome.java)
+
+10. [全排列](permute.ts)
