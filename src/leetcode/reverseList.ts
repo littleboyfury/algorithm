@@ -57,21 +57,34 @@ function reverseList(head: ListNode | null): ListNode | null {
   // 前一个节点
   let last: ListNode | null = null
   // 当前节点
-  let temp = head
+  // let temp = head
   // 下一个节点
   let next: ListNode | null = head?.next
   while (true) {
     // 指针反转
-    temp.next = last
+    head.next = last
     // 向前移动
-    last = temp
+    last = head
     if (!next) {
       break
     }
-    temp = next
+    head = next
     next = next.next
   }
-  return temp
+  return head
+}
+
+function reverseList1(head: ListNode | null): ListNode | null {
+  if (!head || !head.next) {
+    return head
+  }
+  const last: ListNode = reverseList1(head.next) as ListNode
+  // 将当前节点的下一个节点的下一个节点指向当前节点
+  // 该操作改变了后面节点指向，改为指向了前一个节点
+  head.next.next = head
+  // 把当前节点的下一个节点设置为 null，断开当前链接，不然就是循环
+  head.next = null
+  return last
 }
 
 const a = new ListNode(1)
@@ -85,3 +98,14 @@ a.next.next.next.next.next = new ListNode(6)
 console.time('self')
 console.dir(reverseList(a), { depth: 10 })
 console.timeEnd('self')
+
+const b = new ListNode(1)
+b.next = new ListNode(2)
+b.next.next = new ListNode(3)
+b.next.next.next = new ListNode(4)
+b.next.next.next.next = new ListNode(5)
+b.next.next.next.next.next = new ListNode(6)
+
+console.time('other')
+console.dir(reverseList1(b), { depth: 10 })
+console.timeEnd('other')
