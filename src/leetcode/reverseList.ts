@@ -109,3 +109,5 @@ b.next.next.next.next.next = new ListNode(6)
 console.time('other')
 console.dir(reverseList1(b), { depth: 10 })
 console.timeEnd('other')
+
+export default ''
