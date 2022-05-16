@@ -1,8 +1,8 @@
 # LeetCode
 
-1. [1.两个数的和](TwoSum.java)
-2. [2. 两数相加](AddTwoNumbers.java)
-3. [3. 无重复字符的最长子串](LengthOfLongestSubstring.java)
+1. [1.两个数的和](TwoSum.ts)
+2. [2. 两数相加](AddTwoNumbers.ts)
+3. [3. 无重复字符的最长子串](LengthOfLongestSubstring.ts)
 4. [4. 寻找两个正序数组的中位数](FindMedianSortedArrays.java)
 5. [5. 最长回文子串](LongestPalindrome.java)
 6. [6. Z字形变换](ConvertZ.java)
