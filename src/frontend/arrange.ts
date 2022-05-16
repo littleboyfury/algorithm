@@ -8,12 +8,14 @@ class Arrange {
   }
 
   wait(delay: number): Arrange {
-    // push 一个函数，返回 Promise 的一个定时器
+    // push 一个函数，返回 Promise 的一个定时器，使用 Promise 可以保证执行顺序
     this.queue.push(() => new Promise(resolve => {
       setTimeout(() => {
         resolve('delay ' + delay)
       }, delay)
     }))
+
+    // 返回实例对象
     return this
   }
 
@@ -22,11 +24,12 @@ class Arrange {
     this.queue.push(() => {
       return new Promise(resolve => resolve(action))
     })
+    // 返回实例对象
     return this
   }
 
   /**
-   * 同步调用
+   * 同步调用，利用 async-await 进行等待
    */
   async execute() {
     for (const fn of this.queue) {
@@ -37,13 +40,15 @@ class Arrange {
   }
 
   /**
-   * 异步调用
+   * 异步调用，利用 Promise.then 进行递归等待，保证顺序执行
    */
   syncExecute() {
     if (this.queue.length) {
+      // 推出数组第一个开始执行
       this.queue.shift()!()
         .then(res => {
           console.log(res)
+          // 递归执行下一个指令
           this.syncExecute()
         })
     } else {
@@ -51,7 +56,6 @@ class Arrange {
     }
   }
 }
-
 
 function arrange(value: any): Arrange {
   return new Arrange(value)
@@ -68,4 +72,16 @@ arrange('William')
   .wait(1000)
   .do('push5')
   .execute()
-  // .syncExecute()
+// .syncExecute()
+
+// 结果
+// delay 1000
+// commit
+// push2
+// delay 1000
+// push3
+// delay 1000
+// push4
+// delay 1000
+// push5
+// William
