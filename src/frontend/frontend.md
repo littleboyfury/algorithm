@@ -38,6 +38,7 @@ addTask(400, '4')
 [throttle](throttle.ts)
 
 9. 实现拍平数组
+[flatArray](flatArray.ts)
 10. 实现拍平对象
 11. 实现 semversion，如 1.2.1 > 1.2.0 > 1.1.2.rc.1 > 1.1.2.beta.1 > 1.1.2.alpha.1 > 1.0.0
 12. 写一个加法函数sum，支持sum(1)(2)(3,4)(5,6,7….)，console.log(sum(1,2,3)(4)) => 输出 10
