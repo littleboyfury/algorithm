@@ -32,6 +32,11 @@ addTask(400, '4')
 6. 实现 new 关键字
 7. 实现 bind call apply
 8. 实现 debounce throttle
+防抖
+[debounce](debounce.ts)
+节流
+[throttle](throttle.ts)
+
 9. 实现拍平数组
 10. 实现拍平对象
 11. 实现 semversion，如 1.2.1 > 1.2.0 > 1.1.2.rc.1 > 1.1.2.beta.1 > 1.1.2.alpha.1 > 1.0.0
