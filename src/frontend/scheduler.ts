@@ -32,6 +32,41 @@ class Scheduler {
     // 返回执行结果
     return res
   }
+
+  addSync(callback: () => Promise<any>) {
+    // 返回一个 promise 对象
+    return new Promise(resolve => {
+      if (this.currentConcurrency >= this.concurrency) {
+        // 使用 promise 进行阻塞，因为没有调用 resolve1 方法
+        new Promise(resolve1 => {
+          this.queue.push(resolve1)
+        })
+          .then(() => {
+            // 解除后则可以运行任务
+            this.runJob(resolve, callback)
+          })
+      } else {
+        // 运行任务
+        this.runJob(resolve, callback)
+      }
+    })
+  }
+
+  runJob(resolve, callback: () => Promise<any>) {
+    // 开始运行任务
+    this.currentConcurrency++
+    callback()
+      .then(res => {
+        // 任务执行完毕
+        this.currentConcurrency--
+        if (this.queue.length) {
+          // 解除后面的任务
+          this.queue.shift()()
+        }
+        // 返回结果
+        resolve(res)
+      })
+  }
 }
 
 const timeout = (time, value) => new Promise(resolve => {
@@ -50,4 +85,18 @@ addTask(1000, '1', 'value111111').then(value => console.log(value))
 addTask(500, '2')
 addTask(300, '3', '311111').then(value => console.log(value))
 addTask(400, '4')
+// output: 2 3 1 4
+
+const addTaskSync = (time, order, value?) => {
+  return scheduler.addSync(() => timeout(time, value))
+    .then((value) => {
+      console.log(order)
+      return value
+    })
+}
+
+addTaskSync(1000, '1', 'value111111').then(value => console.log(value))
+addTaskSync(500, '2')
+addTaskSync(300, '3', '311111').then(value => console.log(value))
+addTaskSync(400, '4')
 // output: 2 3 1 4
