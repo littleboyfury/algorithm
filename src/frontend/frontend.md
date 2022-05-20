@@ -4,6 +4,7 @@
 [curry](curry.ts)
 
 3. 实现一个Scheduler类，使下面的代码能正确输出。
+[scheduler](scheduler.ts)
 
 ```javascript
 // Usage
