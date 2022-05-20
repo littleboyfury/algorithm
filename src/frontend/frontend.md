@@ -64,8 +64,10 @@ let list =[
     {id:7,name:'部门G',parentId:2},
     {id:8,name:'部门H',parentId:4}
 ];
-const result = convert(list, ...);
+const result = convert(list);
 ```
+[convert](convert.ts)
+
 18. 实现千位分隔符
 ```javascript
 a = 123456789.12345
