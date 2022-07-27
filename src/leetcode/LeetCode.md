@@ -22,3 +22,9 @@
 20. [322. 零钱兑换](coinChange.ts)
 21. [509. 斐波那契数](fib.ts)
 22. [796. 旋转字符串](rotateString.ts)
+
+# 剑指offer
+
+1. [剑指 Offer 03. 数组中重复的数字](findRepeatNumberOffer.ts)
+2. [剑指 Offer 06. 从尾到头打印链表](reversePrintOffer.ts)
+3. [剑指 Offer 09. 用两个栈实现队列](cQueue.ts)
