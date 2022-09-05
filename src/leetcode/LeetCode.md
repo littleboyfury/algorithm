@@ -19,6 +19,7 @@
 17. [50. Pow(x,n)](myPow.ts)
 18. [51. N 皇后](solveNQueens.ts)
 19. [206. 反转链表](reverseList.ts)
+20. [278. 第一个错误的版本](solution.ts)
 20. [322. 零钱兑换](coinChange.ts)
 21. [509. 斐波那契数](fib.ts)
 22. [796. 旋转字符串](rotateString.ts)
