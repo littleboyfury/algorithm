@@ -51,7 +51,7 @@ function isSubsequence(s, t) {
     return false
   }
 
-  let i = 0, j = 0, isSub = false
+  let i = 0, j = 0
 
   while (i < s.length && j < t.length) {
     if (s[i] === t[j]) {
@@ -66,7 +66,7 @@ function isSubsequence(s, t) {
   }
 
 
-  return isSub
+  return false
 }
 
 
