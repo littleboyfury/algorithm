@@ -14,6 +14,7 @@
 12. [21. 合并两个有序链表](mergeTwoLists.ts)
 13. [26. 删除有序数组中重复项](removeDuplicates.ts)
 14. [28. 实现 strStr()](strStr.ts)
+15. [34. 在排序数组中查找元素的第一个和最后一个位置](searchRange.ts)
 15. [35. 搜索插入位置](searchInsert.ts)
 16. [46. 全排列](permute.ts)
 17. [50. Pow(x,n)](myPow.ts)
