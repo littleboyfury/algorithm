@@ -21,9 +21,11 @@
 18. [51. N 皇后](solveNQueens.ts)
 19. [206. 反转链表](reverseList.ts)
 20. [278. 第一个错误的版本](solution.ts)
-20. [322. 零钱兑换](coinChange.ts)
-21. [509. 斐波那契数](fib.ts)
-22. [796. 旋转字符串](rotateString.ts)
+21. [322. 零钱兑换](coinChange.ts)
+22. [392. 判断子序列](isSubsequence.ts)
+23. [415. 字符串相加](addStrings.ts)
+24. [509. 斐波那契数](fib.ts)
+25. [796. 旋转字符串](rotateString.ts)
 
 # 剑指offer
 
