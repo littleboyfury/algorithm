@@ -19,6 +19,7 @@
 16. [46. 全排列](permute.ts)
 17. [50. Pow(x,n)](myPow.ts)
 18. [51. N 皇后](solveNQueens.ts)
+19. [155. 最小栈](minStack.ts)
 19. [206. 反转链表](reverseList.ts)
 20. [278. 第一个错误的版本](solution.ts)
 21. [322. 零钱兑换](coinChange.ts)
